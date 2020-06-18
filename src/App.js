@@ -5,8 +5,13 @@ import './asset/css/animate.css';
 import './asset/css/bootstrap.min.css';
 import './asset/css/templatemo-style.css';
 import './asset/css/font-awesome.min.css';
+import Home from '../src/asset/images/home-img.jpg'
 import { Link, animateScroll as scroll } from "react-scroll";
+import { Line, Circle } from 'rc-progress';
 function App() {
+
+   
+
   return (
     <div className="App">
      
@@ -75,7 +80,8 @@ function App() {
           <div class="row">
 
                <div class="col-md-6 col-sm-6">
-                    <div class="home-img"></div>
+                    <img src={Home}  />
+                    {/* <div class="home-img"></div> */}
                </div>
 
                <div class="col-md-6 col-sm-6">
@@ -127,21 +133,24 @@ function App() {
                          <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
                          <strong>Frontend Design</strong>
                               <span class="color-white pull-right">90%</span>
-                                   <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" ></div>
-                                   </div>
+
+                              <Line percent="90" strokeWidth="1" strokeColor="red" />
+                                   {/* <div class="progress" >
+                                        <div style={{backgroundColor:"red"}} class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" ></div>
+                                   </div> */}
 
                          <strong>Backend processing</strong>
                               <span class="color-white pull-right">70%</span>
-                                   <div class="progress">
+                                   {/* <div class="progress">
                                         <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" ></div>
-                                   </div>
-
+                                   </div> */}
+                      <Line percent="90" strokeWidth="1" strokeColor="green" />
                          <strong>HTML5 {'&'} CSS3</strong>
                               <span class="color-white pull-right">80%</span>
-                                   <div class="progress">
+                                   {/* <div class="progress">
                                         <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ></div>
-                                   </div>
+                                   </div> */}
+                                     <Line percent="80" strokeWidth="1" strokeColor="blue" />
                          </div>
 
                     </div>
