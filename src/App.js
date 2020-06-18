@@ -203,7 +203,7 @@ function App() {
                     <div class="color-white education-thumb">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
                               <h1>My Education</h1>
-                              <p class="color-white">In cursus orci non ipsum gravida dignissim</p>
+                              <p class="color-white">Diploma from Rajkot</p>
                          </div>
 
                          <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
