@@ -82,8 +82,8 @@ function App() {
                     <div class="home-thumb">
                          <div class="section-title">
                               <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4>
-                              <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>Stimulus</strong> currently based in New York city.</h1>
-                              <p class="wow fadeInUp" data-wow-delay="0.9s">Donec auctor arcu at efficitur lacinia. Praesent bibendum efficitur ipsum, et mattis tellus interdum in. Ut a dictum purus. Vestibulum non pellentesque felis, sed dignissim urna. Vestibulum id accumsan quam.</p>
+                              <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>RP</strong>.</h1>
+                              <p class="wow fadeInUp" data-wow-delay="0.9s">A programmer, C# enthusiast</p>
                               
                               <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
                               
