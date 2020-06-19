@@ -39,7 +39,7 @@
 
 .custom-navbar .nav li .active
 {
-  border-bottom:solid 2px red;
+  border-bottom:solid 2px #fff;
 }
 .custom-navbar a{
   cursor: pointer;

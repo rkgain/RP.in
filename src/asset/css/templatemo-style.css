@@ -286,7 +286,7 @@ a:hover, a:active, a:focus {
 }
 
 .custom-navbar .nav li a {
-    color: #666;
+    color: #fff;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 1px;
@@ -308,7 +308,7 @@ a:hover, a:active, a:focus {
 
 .custom-navbar .nav li.active > a {
     background-color: transparent;
-    color: #E3AE57;
+    color: #008ce1;
 }
 
 .custom-navbar .navbar-toggle {
@@ -345,12 +345,19 @@ a:hover, a:active, a:focus {
     Home section              
 -----------------------------------------*/
 
-#home h1 {
+#home h1 , #home strong{
   padding-bottom: 18px;
+  color: #fff;
 }
-
+#home h4 , #home p {
+  color: #fff;
+}
+#home a{
+  color: #fff;
+  border-color:#fff ;
+}
 #home .col-md-6 {
-  background: #f1e2d7;
+  background: #008ce1;
 /* light blue color: #c3eafd; */
   padding-right: 0;
   padding-left: 0;
@@ -709,4 +716,8 @@ footer {
   footer {
     padding: 40px 0;
   }
+}
+
+.top-nav-collapse li a{
+  color: #fff;
 }

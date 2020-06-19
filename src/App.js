@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="App">
-     
-     <div class="navbar navbar-fixed-top custom-navbar top-nav-collapse" role="navigation">
+     {/* top-nav-collapse */}
+     <div class="navbar navbar-fixed-top custom-navbar " role="navigation">
      <div class="container">
 
        
