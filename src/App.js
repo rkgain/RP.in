@@ -87,9 +87,11 @@ function App() {
                <div class="col-md-6 col-sm-6">
                     <div class="home-thumb">
                          <div class="section-title">
-                              <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4>
+                              {/* <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4> */}
                               <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>RP</strong>.</h1>
-                              <p class="wow fadeInUp" data-wow-delay="0.9s">A programmer, C# enthusiast</p>
+                              <p class="wow fadeInUp" data-wow-delay="0.9s" style={{fontSize:"23px"}}>An Avid-Venturer, Programming Guru, #naturelover and Foodie.</p>
+                            <br/>
+                              <p class="wow fadeInUp" data-wow-delay="0.9s" style={{fontStyle:"italic",float:"right"}}> If you think adventures are dangerous, Try routine: it’s lethal. <br/><span style={{float:"right"}}>- Paulo Coelho</span></p>
                               
                               <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
                               
@@ -109,12 +111,15 @@ function App() {
                <div class="col-md-6 col-sm-12">
                     <div class="about-thumb">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
-                              <h1>Donec auctor</h1>
-                              <p class="color-yellow">Sed vulputate vitae diam quis bibendum</p>
+                              <h2>About Me</h2>
+                             
                          </div>
                          <div class="wow fadeInUp" data-wow-delay="0.8s">
-                              <p>Phasellus vulputate tellus nec tortor varius elementum. Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu, iaculis congue sem. Mauris convallis eros massa.</p>
-                              <p>Quisque viverra iaculis aliquam. Etiam volutpat, justo non aliquam bibendum, sem nibh mollis erat, quis porta odio odio at velit.</p>
+                              <p>Since the beginning of my journey as a programmer nearly 7 years ago, 
+I've done many remote works for different agencies, and have collaborated with talented people to create products for 
+both businesses and consumer's use.</p><hr/>
+                              <p>I'm a tech enthusiast as well a MotoGP game fanatic.
+When I am not at my computer, my love for animals, exploring untouched serenic beauties and tasting different flavours keep me going.</p>
                          </div>
                     </div>
                </div>
@@ -255,7 +260,7 @@ function App() {
                     <div class="contact-form">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
                               <h1 class="color-white">Say hello..</h1>
-                              <p class="color-white">Integer ut consectetur est. In cursus orci non ipsum gravida dignissim.</p>
+                              <p class="color-white">Feel free to get in touch with me.</p>
                          </div>
 
                          <div id="contact-form">
