@@ -24,9 +24,19 @@ class App extends React.Component {
   
         }
      
-     menuHandle = (e)=>{
-          this.setState({showMenu:!this.state.showMenu});
-
+     menuHandle = (pro)=>{
+        if (pro==='btn')
+        {
+         this.setState({showMenu:!this.state.showMenu});
+           console.log("Hello");
+           
+        }
+          
+          else
+          {
+this.setState({showMenu:false});
+          }
+        //  
      }
 
 
@@ -43,7 +53,8 @@ class App extends React.Component {
 
         let classMenu = this.state.showShade ? "navbar navbar-fixed-top top-nav-collapse custom-navbar " : "navbar navbar-fixed-top custom-navbar"
           //  let showMenu = this.state.showMenu ?  "pop navbar-collapse": "collapse navbar-collapse" 
-           let showMenu = (this.state.showShade || window.scrollY===0) ? this.state.showMenu ? "pop navbar-collapse": "collapse navbar-collapse" :"collapse navbar-collapse"
+          //  let showMenu = (this.state.showShade || window.scrollY===0) ? this.state.showMenu ? "pop navbar-collapse": "collapse navbar-collapse" 
+           let showMenu =  this.state.showMenu ? "pop navbar-collapse": "collapse navbar-collapse" //:"collapse navbar-collapse"
   return (
     <div className="App"   >
      {/* top-nav-collapse */}
@@ -53,7 +64,7 @@ class App extends React.Component {
 
        
           <div class="navbar-header" >
-               <button class="navbar-toggle" onClick={this.menuHandle} data-toggle="collapse" data-target=".navbar-collapse">
+               <button class="navbar-toggle" onClick={()=>this.menuHandle('btn')} data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
@@ -69,7 +80,7 @@ class App extends React.Component {
     spy={true}
     smooth={true}
     offset={-50}
-    duration={1500} onClick={this.menuHandle}
+    duration={1500} onClick={()=>this.menuHandle('btn')}
 >Home</Link>
                     
                     </li>
@@ -80,7 +91,7 @@ class App extends React.Component {
     spy={true}
     smooth={true}
     offset={-50}
-    duration={700} onClick={this.menuHandle}
+    duration={700} onClick={()=>this.menuHandle('')}
 >About Me</Link>
                     </li>
                     <li>
@@ -89,7 +100,7 @@ class App extends React.Component {
     spy={true}
     smooth={true}
     offset={-50}
-    duration={1500} onClick={this.menuHandle}
+    duration={1500} onClick={()=>this.menuHandle('')}
 >Experiences</Link>
                     </li>
                     <li>
@@ -98,7 +109,7 @@ class App extends React.Component {
     spy={true}
     smooth={true}
     offset={-50}
-    duration={1500} onClick={this.menuHandle}
+    duration={1500} onClick={()=>this.menuHandle('')}
 >My Work</Link>
                      </li>
                      <li>
@@ -107,7 +118,7 @@ class App extends React.Component {
     spy={true}
     smooth={true}
     offset={-60}
-    duration={1500} onClick={this.menuHandle}
+    duration={1500} onClick={()=>this.menuHandle('')}
 >Say hello</Link>
                      </li>
                     
