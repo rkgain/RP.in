@@ -237,7 +237,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                               </div>
                               <div class="media-body">
                                    <h3 class="media-heading">Programmer <small>From 2013</small></h3>
-                                   <p class="color-white">SOVTECH</p>
+                                   <p class="color-white">Society for Promotion of Vocational &amp; Technical Education (SOVTECH) </p>
                               </div>
                          </div>
 
