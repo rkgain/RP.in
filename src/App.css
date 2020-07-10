@@ -44,3 +44,22 @@
 .custom-navbar a{
   cursor: pointer;
 }
+small{
+  color: #fff;
+}
+.top-nav-collapse{
+box-shadow: 0 0 4px 0 rgba(0,0,0,0.6);
+}
+.top-nav-collapse .nav li a{
+  color: #008ce1;
+  border-top:3px solid #fff;
+}
+
+.top-nav-collapse .nav li .active
+{
+  border-top:3px solid #008ce1;
+}
+
+.pop .nav li a{
+  color: #008ce1;
+}

@@ -6,9 +6,13 @@ http://www.templatemo.com/tm-498-stimulus
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 body {
 	background: #ffffff;
-    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
     font-style: normal;
 	font-weight: 300;
     overflow-x: hidden;
@@ -321,7 +325,7 @@ a:hover, a:active, a:focus {
 }
 
 .custom-navbar .navbar-toggle .icon-bar {
-    background: #E3AE57;
+    background: #008ce1;
     border-color: transparent;
 }
 
@@ -362,14 +366,14 @@ a:hover, a:active, a:focus {
   padding-right: 0;
   padding-left: 0;
 }
-/* 
-#home .home-img {
+
+ #home .home-img {
   background: url('../images/home-img.jpg') no-repeat;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 80% 50%;
   width: 100%;
   height: 100vh;
-} */
+} 
 
 #home img {
  margin-left: -20%;
@@ -396,9 +400,9 @@ a:hover, a:active, a:focus {
    About section              
 -----------------------------------------*/
 
-#about .about-img {
+/* #about .about-img {
     background: url('../images/about-img.jpg') no-repeat;
-}
+} */
 
 #about .about-thumb,
 #about .skill-thumb {
@@ -455,6 +459,11 @@ a:hover, a:active, a:focus {
 
 #experience .experience-img {
   background: url('../images/experience-img.jpg') no-repeat;
+  background-size: cover;
+ 
+  width: 100%;
+  height: 10vh;
+   background-position: 100% 50%;
 }
 
 #experience .media-heading {
@@ -469,6 +478,7 @@ a:hover, a:active, a:focus {
 #experience small {
   color: #633;
   font-weight: bold;
+  font-family: 'Nunito', sans-serif;
 }
 
 /*---------------------------------------
@@ -476,7 +486,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #education {
-  background: #E3AE57;
+  background: #38ccae;
 }
 
 #education .education-img {
@@ -493,8 +503,9 @@ a:hover, a:active, a:focus {
 }
 
 #education small {
-  color: #886D1E;
-  font-weight: bold;
+  color: #333333;
+  font-family: 'Nunito', sans-serif;
+  /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 }
 
 
@@ -503,14 +514,14 @@ a:hover, a:active, a:focus {
    Quotes section              
 -----------------------------------------*/
 
-#quotes {
+/* #quotes {
     background: url('../images/quotes-bg.jpg') 50% 0 repeat-y fixed;
     background-size: cover;
     background-position: center center;
     color: #ffffff;
     position: relative;
     padding: 100px 0px;
-}
+} */
 
 #quotes .overlay {
     background: #121212;
@@ -536,20 +547,30 @@ a:hover, a:active, a:focus {
     Contact section              
 -----------------------------------------*/
 
+.bg-dark{
+  background-color: #293745;
+}
+
 #contact {
-  background: #E9724C;
+  /* background: #E9724C; */
+  background-color: #293745;
 }
 
 #contact .contact-form,
 #contact .contact-thumb {
   padding: 22px 32px 22px 32px;
-  min-height: 75vh;
+  min-height: 32vh;
 }
+#contact i{
+  font-size: 22px;
+  margin-right: 10px;
+  margin-left: 10px;
 
-#contact .contact-img {
+}
+/* #contact .contact-img {
   background: url('../images/contact-img.jpg') no-repeat;
   min-height: 75vh;
-}
+} */
 
 #contact .contact-info {
   padding-top: 6px;

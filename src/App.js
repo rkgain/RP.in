@@ -1,26 +1,58 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+
 import './asset/css/animate.css';
 import './asset/css/bootstrap.min.css';
 import './asset/css/templatemo-style.css';
 import './asset/css/font-awesome.min.css';
+import './App.css';
 import Home from '../src/asset/images/home-img.jpg'
+
 import { Link, animateScroll as scroll } from "react-scroll";
 // import { Line, Circle } from 'rc-progress';
-function App() {
+class App extends React.Component {
+   state = {showShade: false,
+          showMenu:false          
+     }
 
+     handleScroll = e => {
+
+          if (window.scrollY>70)
+               this.setState({showShade:true})
+          else
+               this.setState({showShade:false})
+
+        }
+     
+     menuHandle = (e)=>{
+          this.setState({showMenu:!this.state.showMenu});
+
+     }
+
+
+        componentDidMount() {
+          window.addEventListener('scroll', this.handleScroll, true);
+        }
+      
+        componentWillUnmount() {
+          window.removeEventListener('scroll', this.handleScroll);
+        }
+       
    
+     render() {
 
+        let classMenu = this.state.showShade ? "navbar navbar-fixed-top top-nav-collapse custom-navbar " : "navbar navbar-fixed-top custom-navbar"
+          let showMenu = this.state.showMenu ? "pop navbar-collapse" :"collapse navbar-collapse"
   return (
-    <div className="App">
+    <div className="App"   >
      {/* top-nav-collapse */}
-     <div class="navbar navbar-fixed-top custom-navbar " role="navigation">
+         
+     <div className={classMenu} role="navigation">
      <div class="container">
 
        
-          <div class="navbar-header">
-               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <div class="navbar-header" >
+               <button class="navbar-toggle" onClick={this.menuHandle} data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
@@ -28,7 +60,7 @@ function App() {
                <a href="#" class="navbar-brand">RP</a>
           </div>
 
-          <div class="collapse navbar-collapse">
+          <div className={showMenu}>
                <ul class="nav navbar-nav navbar-right">
                     <li>
                     <Link activeClass="active"
@@ -36,7 +68,7 @@ function App() {
     spy={true}
     smooth={true}
     offset={-50}
-    duration={1500}
+    duration={1500} onClick={this.menuHandle}
 >Home</Link>
                     
                     </li>
@@ -47,7 +79,7 @@ function App() {
     spy={true}
     smooth={true}
     offset={-50}
-    duration={700}
+    duration={700} onClick={this.menuHandle}
 >About Me</Link>
                     </li>
                     <li>
@@ -56,7 +88,7 @@ function App() {
     spy={true}
     smooth={true}
     offset={-50}
-    duration={1500}
+    duration={1500} onClick={this.menuHandle}
 >Experiences</Link>
                     </li>
                     <li>
@@ -65,8 +97,8 @@ function App() {
     spy={true}
     smooth={true}
     offset={-60}
-    duration={1500}
->Contact</Link>
+    duration={1500} onClick={this.menuHandle}
+>Say hello</Link>
                      </li>
                </ul>
           </div>
@@ -75,13 +107,13 @@ function App() {
 </div>
 
      
-<section id="home" class="parallax-section">
+<section id="home" className="parallax-section" >
      <div class="container">
           <div class="row">
 
                <div class="col-md-6 col-sm-6">
-                    <img src={Home}  />
-                    {/* <div class="home-img"></div> */}
+                    {/* <img src={Home}  /> */}
+                    <div class="home-img"></div>
                </div>
 
                <div class="col-md-6 col-sm-6">
@@ -93,8 +125,19 @@ function App() {
                             <br/>
                               <p class="wow fadeInUp" data-wow-delay="0.9s" style={{fontStyle:"italic",float:"right"}}> If you think adventures are dangerous, Try routine: it’s lethal. <br/><span style={{float:"right"}}>- Paulo Coelho</span></p>
                               
-                              <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
-                              
+                              {/* <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
+                               */}
+                               <br/><br/><br/>
+                              <Link 
+    to="about"
+    spy={true}
+    smooth={true}
+    offset={-50}
+    duration={1500}
+    className="section-btn btn btn-success"
+>Know More</Link>
+
+
                          </div>
                     </div>
                </div>
@@ -124,11 +167,11 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                     </div>
                </div>
 
-               <div class="col-md-3 col-sm-6">
+               {/* <div class="col-md-3 col-sm-6">
                     <div class="background-image about-img"></div>
-               </div>
+               </div> */}
 
-               <div class="bg-yellow col-md-3 col-sm-6">
+               <div class="bg-dark col-md-6 col-sm-6">
                     <div class="skill-thumb">
                          <div class="wow fadeInUp section-title color-white" data-wow-delay="1.2s">
                               <h1>My Skills</h1>
@@ -136,25 +179,32 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                          </div>
 
                          <div class=" wow fadeInUp skills-thumb" data-wow-delay="1.6s">
-                         <strong>Frontend Design</strong>
-                              <span class="color-white pull-right">90%</span>
+                         <strong class="color-white">Web App</strong>
+                              <span class="color-white pull-right">91%</span>
 
 
-                                   <div class="progress" >
-                                        <div style={{backgroundColor:"red"}} class="progress-bar" style={{width:"70%"}}></div>
+                                   <div class="progress " >
+                                        <div class="progress-bar" style={{width:"91%",backgroundColor:"#86c232"}}></div>
                                    </div>
 
-                         <strong>Backend processing</strong>
-                              <span class="color-white pull-right">70%</span>
+                         <strong class="color-white">Mobile App</strong>
+                              <span class="color-white pull-right">83%</span>
                               <div class="progress" >
-                                        <div  class="progress-bar progress-bar-success" style={{width:"90%",color:"Red"}}></div>
+                                        <div  class="progress-bar" style={{width:"83%",backgroundColor:"#3aafa9"}}></div>
                                    </div>
                       {/* <Line percent="90" strokeWidth="1" strokeColor="green" /> */}
-                         <strong>HTML5 {'&'} CSS3</strong>
-                              <span class="color-white pull-right">80%</span>
+                         <strong class="color-white">CMS</strong>
+                              <span class="color-white pull-right">74%</span>
                               <div class="progress" >
-                                        <div style={{backgroundColor:"#008ce1"}} class="progress-bar" style={{width:"70%"}}></div>
+                                        <div  class="progress-bar" style={{width:"74%",backgroundColor:"#fdce4b"}}></div>
                                    </div>
+
+                                   <strong class="color-white">Photoshop</strong>
+                              <span class="color-white pull-right">54%</span>
+                              <div class="progress" >
+                                        <div  class="progress-bar" style={{width:"54%",backgroundColor:"#f76c6c"}}></div>
+                                   </div>
+
                                      {/* <Line percent="80" strokeWidth="1" strokeColor="blue" /> */}
                          </div>
 
@@ -177,8 +227,8 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                <div class="col-md-6 col-sm-6">
                     <div class="color-white experience-thumb">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
-                              <h1>My Experiences</h1>
-                              <p class="color-white">Previous companies and my tasks</p>
+                              <h1>My Work Experiences</h1>
+                             
                          </div>
 
                          <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
@@ -186,18 +236,28 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                                    <i class="fa fa-laptop"></i>
                               </div>
                               <div class="media-body">
-                                   <h3 class="media-heading">Graphic Designer <small>2014 Jul - 2015 Sep</small></h3>
-                                   <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                   <h3 class="media-heading">Programmer <small>From 2013</small></h3>
+                                   <p class="color-white">SOVTECH</p>
                               </div>
                          </div>
 
                          <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
                               <div class="media-object media-left">
-                                   <i class="fa fa-laptop"></i>
+                                   <i class="fa fa-institution"></i>
                               </div>
                               <div class="media-body">
-                                   <h3 class="media-heading">Web Designer <small>2015 Oct - 2017 Jan</small></h3>
-                                   <p class="color-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                   <h3 class="media-heading">Part Time Instructor (Computer) <small>2009 - 2012</small></h3>
+                                   <p class="color-white">Dr. BR Ambedkar Institute of Technology</p>
+                              </div>
+                         </div>
+
+                         <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                              <div class="media-object media-left">
+                                   <i class="fa fa-html5"></i>
+                              </div>
+                              <div class="media-body">
+                                   <h3 class="media-heading">Software Developer <small>2009</small></h3>
+                                   <p class="color-white">Directorate Of Shipping Services</p>
                               </div>
                          </div>
 
@@ -217,28 +277,30 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                     <div class="color-white education-thumb">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
                               <h1>My Education</h1>
-                              <p class="color-white">Diploma from Rajkot</p>
+                         
                          </div>
 
                          <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
                               <div class="media-object media-left">
-                                   <i class="fa fa-laptop"></i>
+                                   <i class="fa fa-graduation-cap"></i>
                               </div>
                               <div class="media-body">
-                                   <h3 class="media-heading">Master in Design <small>2012 Jan - 2014 May</small></h3>
-                                   <p class="color-white">Etiam iaculis elit in mauris ullamcorper auctor. Proin a sapien id orci ullamcorper dignissim eu in neque. </p>
+                                   <h3 class="media-heading">Master in Computer Applications <small>2015 - 2017</small></h3>
+                                   <p class="color-white">Annamalai University </p>
                               </div>
                          </div>
 
                          <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
                               <div class="media-object media-left">
-                                   <i class="fa fa-laptop"></i>
+                                   <i class="fa fa-file-text"></i>
                               </div>
                               <div class="media-body">
-                                   <h3 class="media-heading">Bachelor of Arts <small>2008 May - 2011 Dec</small></h3>
-                                   <p class="color-white">Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                                   <h3 class="media-heading">Diploma in Computer Engineering <small>2006-2009</small></h3>
+                                   <p class="color-white">Dr. BR Ambedkar Institute of Technology</p>
                               </div>
                          </div>
+                         <br/>
+                         <br/>
 
                     </div>
                </div>
@@ -261,9 +323,16 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
                               <h1 class="color-white">Say hello..</h1>
                               <p class="color-white">Feel free to get in touch with me.</p>
+                             <p> 
+                                   {/*<a href="#"><i class="fa fa-facebook"> </i></a> |  */}
+                              &nbsp;<a href="https://twitter.com/Rakesh65622735" target="_blank"><i class="fa fa-twitter"> </i></a> |  &nbsp;
+                              <a href="#"><i class="fa fa-instagram"> </i></a> |  &nbsp;
+                              <a href="mailto:rakeshreturnz@gmail.com"><i class="fa fa-envelope"></i></a>
+
+                             </p>
                          </div>
 
-                         <div id="contact-form">
+                         {/* <div id="contact-form">
                               <form action="#template-mo" method="post">
                                    <div class="wow fadeInUp" data-wow-delay="1s">
                                         <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name" />
@@ -278,12 +347,12 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                                         <input name="submit" type="submit" class="form-control" id="submit" value="Send" />
                                    </div>
                               </form>
-                         </div>
+                         </div> */}
 
                     </div>
                </div>
 
-               <div class="col-md-3 col-sm-6">
+               {/* <div class="col-md-3 col-sm-6">
                     <div class="background-image contact-img"></div>
                </div>
 
@@ -303,7 +372,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 
                     </div>
                </div>
-  
+   */}
           </div>
      </div>
 </section>
@@ -311,6 +380,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 
     </div>
   );
+}
 }
 
 export default App;
