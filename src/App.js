@@ -42,7 +42,7 @@ class App extends React.Component {
      render() {
 
         let classMenu = this.state.showShade ? "navbar navbar-fixed-top top-nav-collapse custom-navbar " : "navbar navbar-fixed-top custom-navbar"
-          let showMenu = this.state.showMenu ? "pop navbar-collapse" :"collapse navbar-collapse"
+          let showMenu = this.state.showMenu ? this.state.showShade ? "pop navbar-collapse": "collapse navbar-collapse" :"collapse navbar-collapse"
   return (
     <div className="App"   >
      {/* top-nav-collapse */}
