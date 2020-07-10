@@ -20,8 +20,8 @@ class App extends React.Component {
           if (window.scrollY>70)
                this.setState({showShade:true})
           else
-               this.setState({showShade:false})
-
+      this.setState({showShade:false})
+  
         }
      
      menuHandle = (e)=>{
@@ -42,7 +42,8 @@ class App extends React.Component {
      render() {
 
         let classMenu = this.state.showShade ? "navbar navbar-fixed-top top-nav-collapse custom-navbar " : "navbar navbar-fixed-top custom-navbar"
-          let showMenu = this.state.showMenu ? this.state.showShade ? "pop navbar-collapse": "collapse navbar-collapse" :"collapse navbar-collapse"
+          //  let showMenu = this.state.showMenu ?  "pop navbar-collapse": "collapse navbar-collapse" 
+           let showMenu = (this.state.showShade || window.scrollY===0) ? this.state.showMenu ? "pop navbar-collapse": "collapse navbar-collapse" :"collapse navbar-collapse"
   return (
     <div className="App"   >
      {/* top-nav-collapse */}
@@ -130,10 +131,10 @@ class App extends React.Component {
                     <div class="home-thumb">
                          <div class="section-title">
                               {/* <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4> */}
-                              <h1 class="wow fadeInUp" data-wow-delay="0.6s">Hello, I am <strong>RP</strong>.</h1>
+                              <h1 class="wow fadeInUp service-thumb animated" data-wow-delay="0.6s">Hello, I am <strong>RP</strong>.</h1>
                               <p class="wow fadeInUp" data-wow-delay="0.9s" style={{fontSize:"23px"}}>An Avid-Venturer, Programming Guru, #naturelover and Foodie.</p>
                             <br/>
-                              <p class="wow fadeInUp" data-wow-delay="0.9s" style={{fontStyle:"italic",float:"right"}}> If you think adventures are dangerous, Try routine: it’s lethal. <br/><span style={{float:"right"}}>- Paulo Coelho</span></p>
+                              <p class="wow fadeInDown service-thumb animated" data-wow-delay="0.9s" style={{fontStyle:"italic",float:"right"}}> If you think adventures are dangerous, Try routine: it’s lethal. <br/><span style={{float:"right"}}>- Paulo Coelho</span></p>
                               
                               {/* <a href="#about" class="wow fadeInUp smoothScroll section-btn btn btn-success" data-wow-delay="1.4s">Get Started</a>
                                */}
@@ -144,7 +145,7 @@ class App extends React.Component {
     smooth={true}
     offset={-50}
     duration={1500}
-    className="section-btn btn btn-success"
+    className="section-btn btn btn-success wow fadeInDown service-thumb animated"
 >Know More</Link>
 
 
@@ -333,7 +334,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 
               
 
-               <div class="col-md-12 col-sm-6" style={{padding:"10px 40px"}}>
+               <div class="col-md-12 col-sm-12" style={{padding:"10px 40px"}}>
                <div class="color-white wow fadeInUp section-title" data-wow-delay="0.8s">
                               <h1>My Work </h1>
                          
@@ -424,7 +425,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                              <p style={{color:"white"}}> 
                                    {/*<a href="#"><i class="fa fa-facebook"> </i></a> |  */}
                               &nbsp;<a href="https://twitter.com/Rakesh65622735" target="_blank"><i class="fa fa-twitter"> </i></a> |  &nbsp;
-                              <a href="#"><i class="fa fa-instagram"> </i></a> |  &nbsp;
+                              {/* <a href="#"><i class="fa fa-instagram"> </i></a> |  &nbsp; */}
                               <a href="mailto:rakeshreturnz@gmail.com"><i class="fa fa-envelope"></i></a>
 
                              </p>
