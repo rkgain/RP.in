@@ -93,6 +93,15 @@ class App extends React.Component {
                     </li>
                     <li>
                     <Link activeClass="active"
+    to="service"
+    spy={true}
+    smooth={true}
+    offset={-50}
+    duration={1500} onClick={this.menuHandle}
+>My Work</Link>
+                     </li>
+                     <li>
+                    <Link activeClass="active"
     to="contact"
     spy={true}
     smooth={true}
@@ -100,6 +109,7 @@ class App extends React.Component {
     duration={1500} onClick={this.menuHandle}
 >Say hello</Link>
                      </li>
+                    
                </ul>
           </div>
 
@@ -220,14 +230,12 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
      <div class="container">
           <div class="row">
 
-               <div class="col-md-6 col-sm-6">
-                    <div class="background-image experience-img"></div>
-               </div>
+              
 
                <div class="col-md-6 col-sm-6">
                     <div class="color-white experience-thumb">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
-                              <h1>My Work Experiences</h1>
+                              <h1>My Experiences</h1>
                              
                          </div>
 
@@ -263,16 +271,21 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 
                     </div>
                </div>
-
+               <div class="col-md-6 col-sm-6">
+                    <div class="background-image experience-img"></div>
+               </div>
           </div>
      </div>
 </section>
 
 
+
 <section id="education" class="parallax-section">
      <div class="container">
           <div class="row">
-
+  <div class="col-md-6 col-sm-6">
+                    <div class="background-image education-img"></div>
+               </div>
                <div class="col-md-6 col-sm-6">
                     <div class="color-white education-thumb">
                          <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
@@ -305,16 +318,101 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                     </div>
                </div>
 
-               <div class="col-md-6 col-sm-6">
-                    <div class="background-image education-img"></div>
-               </div>
+             
 
           </div>
      </div>
 </section>
 
 
-<section id="contact" class="parallax-section">
+
+
+<section id="service" class="parallax-section bg-dark" style={{backgroundColor:"#293745"}}>
+     <div class="container">
+          <div class="row">
+
+              
+
+               <div class="col-md-12 col-sm-6" style={{padding:"10px 40px"}}>
+               <div class="color-white wow fadeInUp section-title" data-wow-delay="0.8s">
+                              <h1>My Work </h1>
+                         
+                         </div>
+
+               <div class="row pad">
+               <div class="bg-cyan col-md-3 col-sm-6">
+     <div class=" color-white wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
+          <i class="fa fa-laptop"></i>
+               <h3>Portal for Reporting of Prime Ministers Scheme</h3>
+             
+     </div>
+</div>
+<div class="bg-white col-md-3 col-sm-6">
+     <div class="wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
+          <i class="fa fa-html5"></i>
+               <h3>Daily Telegram <br/>web portal </h3>
+              
+     </div>
+</div>
+<div class="bg-orange col-md-3 col-sm-6">
+     <div class="color-white wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
+          <i class="fa fa-android"></i>
+               <h3>Andaman &amp; Nicobar Weather app</h3>
+              
+     </div>
+</div>
+
+<div class="bg-white col-md-3 col-sm-6">
+     <div class=" wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
+          <i class="fa fa-android"></i>
+               <h3>mChallan <br/> for A &amp; N Police</h3>
+             
+     </div>
+</div>
+</div>
+             
+
+             
+<div class="row pad">
+               <div class="bg-white col-md-3 col-sm-6">
+     <div class="wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
+          <i class="fa fa-html5"></i>
+               <h3>Website for Department of Education </h3>
+             
+     </div>
+</div>
+<div class="bg-yellow col-md-3 col-sm-6">
+     <div class="color-white wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
+          <i class="fa fa-laptop"></i>
+               <h3>FactCheck for Directorate of Information Publicity</h3>
+     </div>
+</div>
+<div class="bg-white col-md-3 col-sm-6">
+     <div class="wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
+          <i class="fa fa-laptop"></i>
+               <h3>Transfer and Posting for Directorate of Education</h3>
+            
+     </div>
+</div>
+
+<div class="bg-blue col-md-3 col-sm-6">
+     <div class="color-white wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
+          <i class="fa fa-laptop"></i>
+               <h3>UrjaPay (Upcoming..) for Department of Electricity</h3>
+             
+     </div>
+</div>
+</div>
+             
+                </div>
+               
+          </div>
+     </div>
+</section>
+
+
+
+<section id="contact" class="parallax-section" style={{backgroundColor:"#116466"}}>
      <div class="container">
           <div class="row">
 
@@ -323,7 +421,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                          <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
                               <h1 class="color-white">Say hello..</h1>
                               <p class="color-white">Feel free to get in touch with me.</p>
-                             <p> 
+                             <p style={{color:"white"}}> 
                                    {/*<a href="#"><i class="fa fa-facebook"> </i></a> |  */}
                               &nbsp;<a href="https://twitter.com/Rakesh65622735" target="_blank"><i class="fa fa-twitter"> </i></a> |  &nbsp;
                               <a href="#"><i class="fa fa-instagram"> </i></a> |  &nbsp;

@@ -175,6 +175,15 @@ footer {
 .bg-yellow {
   background: #E3AE57;
 }
+.bg-orange
+{
+  background-color: #E9724C;
+}
+.bg-blue{background-color: #008ce1;}
+.bg-cyan
+{
+  background-color: #afd275;
+}
 
 .bg-white {
   background: #ffffff;
@@ -337,8 +346,9 @@ a:hover, a:active, a:focus {
     }
     .custom-navbar.top-nav-collapse {
         background: #ffffff;
-        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+        box-shadow: 0px 0px 4px 0px rgba(50, 50, 50, 0.4);
         padding: 0;
+        /* color: #b8b9b9; */
     }
 
 }
@@ -447,6 +457,14 @@ a:hover, a:active, a:focus {
 }
 
 #service .service-thumb .fa {
+  font-size: 42px;
+  padding-bottom: 22px;
+}
+#education .service-thumb {
+  padding: 52px 22px 52px 22px;
+  text-align: center;
+}
+#education .service-thumb .fa {
   font-size: 42px;
   padding-bottom: 22px;
 }
