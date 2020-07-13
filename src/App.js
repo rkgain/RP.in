@@ -69,7 +69,7 @@ this.setState({showMenu:false});
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                </button>
-               <a href="#" class="navbar-brand">Rakesh Prabhu</a>
+               {/* <a href="#" class="navbar-brand">Rakesh Prabhu</a> */}
           </div>
 
           <div className={showMenu}>
@@ -135,14 +135,14 @@ this.setState({showMenu:false});
 
                <div class="col-md-6 col-sm-6">
                     {/* <img src={Home}  /> */}
-                    <div class="home-img"></div>
+                    {/* <div class="home-img"></div> */}
                </div>
 
                <div class="col-md-6 col-sm-6">
                     <div class="home-thumb">
                          <div class="section-title">
                               {/* <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4> */}
-                              <h1 class="wow fadeInUp service-thumb animated" data-wow-delay="0.6s">Hello, I am <strong>Rakesh Prabhu</strong>.</h1>
+                              {/* <h1 class="wow fadeInUp service-thumb animated" data-wow-delay="0.6s">Hello, I am <strong>Rakesh Prabhu</strong>.</h1> */}
                               <p class="wow fadeInUp" data-wow-delay="0.9s" style={{fontSize:"23px"}}>An Avid-Venturer, Programming Guru, #naturelover and Foodie.</p>
                             <br/>
                               <p class="wow fadeInDown service-thumb animated" data-wow-delay="0.9s" style={{fontStyle:"italic",float:"right"}}> If you think adventures are dangerous, Try routine: it’s lethal. <br/><span style={{float:"right"}}>- Paulo Coelho</span></p>
@@ -422,6 +422,140 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
      </div>
 </section>
 
+
+<div class="testimonials" style={{backgroundColor:"#3e3c3d"}}>
+
+<div class="">
+          <div class="row">
+<div style={{textAlign:"center"}}>
+                              <h1 style={{color:"#fff"}}>What my Colleagues say about me </h1>
+                         
+                         </div>
+          <div class="col-md-4 col-sm-12">
+          
+
+          <div class="card">
+		<div class="layer"></div>
+		<div class="content">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+				<div class="image">
+					<img src="img.jpg"/>
+				</div>
+				<div class="details">
+					<h2>Someone Famous<br/><span>Website Designer</span></h2>
+				</div>
+		</div>
+	</div>
+	
+               </div>
+               <div class="col-md-4 col-sm-12">
+
+<div class="card">
+<div class="layer"></div>
+<div class="content">
+     <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="image">
+               <img src="img.jpg"/>
+          </div>
+          <div class="details">
+               <h2>Someone Famous<br/><span>Website Designer</span></h2>
+          </div>
+</div>
+</div>
+
+     </div>
+
+     <div class="col-md-4 col-sm-12">
+
+<div class="card">
+<div class="layer"></div>
+<div class="content">
+     <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="image">
+               <img src="img.jpg"/>
+          </div>
+          <div class="details">
+               <h2>Someone Famous<br/><span>Website Designer</span></h2>
+          </div>
+</div>
+</div>
+
+     </div>
+
+            
+
+     <div class="col-md-4 col-sm-12">
+
+<div class="card">
+<div class="layer"></div>
+<div class="content">
+     <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="image">
+               <img src="img.jpg"/>
+          </div>
+          <div class="details">
+               <h2>Someone Famous<br/><span>Website Designer</span></h2>
+          </div>
+</div>
+</div>
+
+     </div>
+
+            
+
+     <div class="col-md-4 col-sm-12">
+
+<div class="card">
+<div class="layer"></div>
+<div class="content">
+     <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="image">
+               <img src="img.jpg"/>
+          </div>
+          <div class="details">
+               <h2>Someone Famous<br/><span>Website Designer</span></h2>
+          </div>
+</div>
+</div>
+
+     </div>
+
+            
+
+     <div class="col-md-4 col-sm-12">
+
+<div class="card">
+<div class="layer"></div>
+<div class="content">
+     <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="image">
+               <img src="img.jpg"/>
+          </div>
+          <div class="details">
+               <h2>Someone Famous<br/><span>Website Designer</span></h2>
+          </div>
+</div>
+</div>
+
+     </div>
+
+            
+           
+               </div>
+</div>
+</div>
 
 
 <section id="contact" class="parallax-section" style={{backgroundColor:"#116466"}}>
