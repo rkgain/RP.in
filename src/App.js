@@ -6,7 +6,7 @@ import './asset/css/bootstrap.min.css';
 import './asset/css/templatemo-style.css';
 import './asset/css/font-awesome.min.css';
 import './App.css';
-import Home from '../src/asset/images/home-img.jpg'
+import Logo from '../src/asset/images/rp.png'
 
 import { Link, animateScroll as scroll } from "react-scroll";
 // import { Line, Circle } from 'rc-progress';
@@ -69,7 +69,7 @@ this.setState({showMenu:false});
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                </button>
-               {/* <a href="#" class="navbar-brand">Rakesh Prabhu</a> */}
+               <a href="" class="navbar-brand"><img src={Logo} width="120px" alt="Logo of Rakesh Prabhu" style={{marginTop:"-4px",borderBottom:"solid 1px #fff",paddingBottom:"3px"}}/></a>
           </div>
 
           <div className={showMenu}>
@@ -135,7 +135,7 @@ this.setState({showMenu:false});
 
                <div class="col-md-6 col-sm-6">
                     {/* <img src={Home}  /> */}
-                    {/* <div class="home-img"></div> */}
+                    <div class="home-img"></div>
                </div>
 
                <div class="col-md-6 col-sm-6">
@@ -394,7 +394,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
      </div>
 </div>
 <div class="bg-yellow col-md-3 col-sm-6">
-     <div class="color-white wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
+     <div class="color-white wow fadeInUp service-thumb animated"  >
           <i class="fa fa-laptop"></i>
                <h3>FactCheck for Directorate of Information Publicity</h3>
      </div>
@@ -569,7 +569,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                               <p class="color-white">Feel free to get in touch with me.</p>
                              <p style={{color:"white"}}> 
                                    {/*<a href="#"><i class="fa fa-facebook"> </i></a> |  */}
-                              &nbsp;<a href="https://twitter.com/Rakesh65622735" target="_blank"><i class="fa fa-twitter"> </i></a> |  &nbsp;
+                              &nbsp;<a href="https://twitter.com/Rakesh65622735" target="_blank"  rel="noopener noreferrer"><i class="fa fa-twitter"> </i></a> |  &nbsp;
                               {/* <a href="#"><i class="fa fa-instagram"> </i></a> |  &nbsp; */}
                               <a href="mailto:rakeshreturnz@gmail.com"><i class="fa fa-envelope"></i></a>
 
