@@ -22,20 +22,21 @@ class App extends React.Component {
           else
       this.setState({showShade:false})
   
+
+    //  console.log(Date(),"Show Shade -", this.state.showShade , "Menu-", this.state.showMenu);
+       
+
         }
      
      menuHandle = (pro)=>{
         if (pro==='btn')
-        {
+   
          this.setState({showMenu:!this.state.showMenu});
-           console.log("Hello");
-           
-        }
-          
+     
           else
-          {
-this.setState({showMenu:false});
-          }
+         
+          this.setState({showMenu:false});
+       
         //  
      }
 
@@ -80,8 +81,8 @@ this.setState({showMenu:false});
     spy={true}
     smooth={true}
     offset={-50}
-    duration={1500} onClick={()=>this.menuHandle('btn')}
->Home</Link>
+    duration={1500} onClick={()=>this.menuHandle('')}
+><i className="fa fa-home"></i>    </Link>
                     
                     </li>
                     <li>
@@ -112,6 +113,17 @@ this.setState({showMenu:false});
     duration={1500} onClick={()=>this.menuHandle('')}
 >My Work</Link>
                      </li>
+
+                     <li>
+                    <Link activeClass="active"
+    to="test"
+    spy={true}
+    smooth={true}
+    offset={-50}
+    duration={1500} onClick={()=>this.menuHandle('')}
+>Testimonials</Link>
+                     </li>
+
                      <li>
                     <Link activeClass="active"
     to="contact"
@@ -119,7 +131,7 @@ this.setState({showMenu:false});
     smooth={true}
     offset={-60}
     duration={1500} onClick={()=>this.menuHandle('')}
->Say hello</Link>
+>Say hi</Link>
                      </li>
                     
                </ul>
@@ -135,7 +147,7 @@ this.setState({showMenu:false});
 
                <div class="col-md-6 col-sm-6">
                     {/* <img src={Home}  /> */}
-                    <div class="home-img"></div>
+                    {/* <div class="home-img"></div> */}
                </div>
 
                <div class="col-md-6 col-sm-6">
@@ -355,7 +367,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                <div class="bg-cyan col-md-3 col-sm-6">
      <div class=" color-white wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
           <i class="fa fa-laptop"></i>
-               <h3>Portal for Reporting of Prime Ministers Scheme</h3>
+               <h3>Portal for Reporting of PM Scheme</h3>
              
      </div>
 </div>
@@ -423,7 +435,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 </section>
 
 
-<div class="testimonials" style={{backgroundColor:"#3e3c3d"}}>
+<div id="test" class="testimonials" style={{backgroundColor:"#3e3c3d"}}>
 
 <div class="">
           <div class="row">
