@@ -6,7 +6,13 @@ import './asset/css/bootstrap.min.css';
 import './asset/css/templatemo-style.css';
 import './asset/css/font-awesome.min.css';
 import './App.css';
-import Logo from '../src/asset/images/rp.png'
+import Logo from '../src/asset/images/rp.png';
+import Rubesh from '../src/asset/images/rubesh.jpg';
+import Raj from '../src/asset/images/raj.jpg';
+import Sam from '../src/asset/images/sam.jpg';
+import Nandini from '../src/asset/images/nandini.jpg';
+import Abhi from '../src/asset/images/abhi.jpg';
+import Rld from '../src/asset/images/rdl.jpg';
 
 import { Link, animateScroll as scroll } from "react-scroll";
 // import { Line, Circle } from 'rc-progress';
@@ -70,12 +76,16 @@ class App extends React.Component {
                     <span class="icon icon-bar"></span>
                     <span class="icon icon-bar"></span>
                </button>
-               <a href="" class="navbar-brand"><img src={Logo} width="120px" alt="Logo of Rakesh Prabhu" style={{marginTop:"-4px",borderBottom:"solid 1px #fff",paddingBottom:"3px"}}/></a>
+
+               <Link activeClass="active" to="home" spy={true}   smooth={true}  offset={-50}   duration={1500} onClick={()=>this.menuHandle('')}
+> <img src={Logo} width="120px" alt="Logo of Rakesh Prabhu" style={{margin:"7px 26px",borderBottom:"solid 1px #fff",paddingBottom:"3px"}}/>   </Link>
+
+               {/* <a href="" class="navbar-brand"><img src={Logo} width="120px" alt="Logo of Rakesh Prabhu" style={{marginTop:"-6px",borderBottom:"solid 1px #fff",paddingBottom:"3px"}}/></a> */}
           </div>
 
           <div className={showMenu}>
                <ul class="nav navbar-nav navbar-right">
-                    <li>
+                    {/* <li>
                     <Link activeClass="active"
     to="home"
     spy={true}
@@ -84,7 +94,7 @@ class App extends React.Component {
     duration={1500} onClick={()=>this.menuHandle('')}
 ><i className="fa fa-home"></i>    </Link>
                     
-                    </li>
+                    </li> */}
                     <li>
                     <Link
     activeClass="active"
@@ -131,7 +141,7 @@ class App extends React.Component {
     smooth={true}
     offset={-60}
     duration={1500} onClick={()=>this.menuHandle('')}
->Say hi</Link>
+>Say hello</Link>
                      </li>
                     
                </ul>
@@ -147,15 +157,15 @@ class App extends React.Component {
 
                <div class="col-md-6 col-sm-6">
                     {/* <img src={Home}  /> */}
-                    {/* <div class="home-img"></div> */}
+                    <div class="home-img"></div>
                </div>
 
                <div class="col-md-6 col-sm-6">
                     <div class="home-thumb">
                          <div class="section-title">
                               {/* <h4 class="wow fadeInUp" data-wow-delay="0.3s">welcome to my website</h4> */}
-                              {/* <h1 class="wow fadeInUp service-thumb animated" data-wow-delay="0.6s">Hello, I am <strong>Rakesh Prabhu</strong>.</h1> */}
-                              <p class="wow fadeInUp" data-wow-delay="0.9s" style={{fontSize:"23px"}}>An Avid-Venturer, Programming Guru, #naturelover and Foodie.</p>
+                              <h1 class="wow fadeInUp service-thumb animated" data-wow-delay="0.6s">Hello, I am <strong>Rakesh Prabhu</strong>.</h1>
+                              <p class="wow fadeInUp" data-wow-delay="0.9s" style={{fontSize:"23px"}}>An Avid-Venturer, Programming Guru, #NatureLover and Foodie.</p>
                             <br/>
                               <p class="wow fadeInDown service-thumb animated" data-wow-delay="0.9s" style={{fontStyle:"italic",float:"right"}}> If you think adventures are dangerous, Try routine: it’s lethal. <br/><span style={{float:"right"}}>- Paulo Coelho</span></p>
                               
@@ -180,7 +190,7 @@ class App extends React.Component {
           </div>
      </div>
 </section>
-
+ 
 <section id="about" class="parallax-section">
      <div class="container">
           <div class="row">
@@ -201,9 +211,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                     </div>
                </div>
 
-               {/* <div class="col-md-3 col-sm-6">
-                    <div class="background-image about-img"></div>
-               </div> */}
+            
 
                <div class="bg-dark col-md-6 col-sm-6">
                     <div class="skill-thumb">
@@ -226,7 +234,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                               <div class="progress" >
                                         <div  class="progress-bar" style={{width:"83%",backgroundColor:"#3aafa9"}}></div>
                                    </div>
-                      {/* <Line percent="90" strokeWidth="1" strokeColor="green" /> */}
+                      
                          <strong class="color-white">CMS</strong>
                               <span class="color-white pull-right">74%</span>
                               <div class="progress" >
@@ -239,7 +247,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                                         <div  class="progress-bar" style={{width:"54%",backgroundColor:"#f76c6c"}}></div>
                                    </div>
 
-                                     {/* <Line percent="80" strokeWidth="1" strokeColor="blue" /> */}
+                                    
                          </div>
 
                     </div>
@@ -247,7 +255,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 
           </div>
      </div>
-</section>
+</section> 
 
 
 <section id="experience" class="parallax-section">
@@ -300,10 +308,10 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                </div>
           </div>
      </div>
-</section>
+</section> 
 
 
-
+ 
 <section id="education" class="parallax-section">
      <div class="container">
           <div class="row">
@@ -347,7 +355,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
           </div>
      </div>
 </section>
-
+ 
 
 
 
@@ -432,7 +440,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                
           </div>
      </div>
-</section>
+</section> 
 
 
 <div id="test" class="testimonials" style={{backgroundColor:"#3e3c3d"}}>
@@ -453,10 +461,10 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua.</p>
 				<div class="image">
-					<img src="img.jpg"/>
+                    <img src={Abhi}/>
 				</div>
 				<div class="details">
-					<h2>Someone Famous<br/><span>Website Designer</span></h2>
+					<h2>Abhilash Chowdhury<br/><span>Sr. Network Engineer</span></h2>
 				</div>
 		</div>
 	</div>
@@ -468,13 +476,12 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 <div class="layer"></div>
 <div class="content">
      <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</p>
+        You are my expert,most skilled, knowledgeable and committed mentor</p>
           <div class="image">
-               <img src="img.jpg"/>
+          <img src={Sam}/>
           </div>
           <div class="details">
-               <h2>Someone Famous<br/><span>Website Designer</span></h2>
+               <h2>Sameema Thoufique<br/><span>Programmer</span></h2>
           </div>
 </div>
 </div>
@@ -487,34 +494,13 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 <div class="layer"></div>
 <div class="content">
      <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</p>
+     He is very dedicated worker. He handles his work and clients with efficiency.For anyone who has ever worked with him, it quickly 
+     becomes clear that he can run with the best in his field.</p>
           <div class="image">
-               <img src="img.jpg"/>
+          <img src={Nandini} />
           </div>
           <div class="details">
-               <h2>Someone Famous<br/><span>Website Designer</span></h2>
-          </div>
-</div>
-</div>
-
-     </div>
-
-            
-
-     <div class="col-md-4 col-sm-12">
-
-<div class="card">
-<div class="layer"></div>
-<div class="content">
-     <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div class="image">
-               <img src="img.jpg"/>
-          </div>
-          <div class="details">
-               <h2>Someone Famous<br/><span>Website Designer</span></h2>
+               <h2>Nandini Bawali<br/><span>Programmer</span></h2>
           </div>
 </div>
 </div>
@@ -532,10 +518,10 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
           tempor incididunt ut labore et dolore magna aliqua.</p>
           <div class="image">
-               <img src="img.jpg"/>
+          <img src={Rld}/>
           </div>
           <div class="details">
-               <h2>Someone Famous<br/><span>Website Designer</span></h2>
+               <h2>Raghav Kumar<br/><span>Network Engineer</span></h2>
           </div>
 </div>
 </div>
@@ -550,13 +536,34 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 <div class="layer"></div>
 <div class="content">
      <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</p>
+     A charming and polite man. He can accept difficult situations without getting angry. And He has a lot of energy and can think creatively.
+He understands and cares about other people’s problems and he’s good at finding ways to solve problems.</p>
           <div class="image">
-               <img src="img.jpg"/>
+               <img src={Raj} />
           </div>
           <div class="details">
-               <h2>Someone Famous<br/><span>Website Designer</span></h2>
+               <h2>Priyadarsan Raj<br/><span>Programmer</span></h2>
+          </div>
+</div>
+</div>
+
+     </div>
+
+            
+
+     <div class="col-md-4 col-sm-12">
+
+<div class="card">
+<div class="layer"></div>
+<div class="content">
+     <p>
+     If you ask me I can talk many things about him, but to be precise he is the best mentor I have ever had with fantastic IQ, good sense of humor and sound level of patience. 
+     </p>
+           <div class="image">
+               <img src={Rubesh} />
+          </div>
+          <div class="details">
+               <h2>Rubesh Gain<br/><span>Programmer</span></h2>
           </div>
 </div>
 </div>

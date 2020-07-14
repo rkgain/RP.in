@@ -124,12 +124,14 @@ border-bottom-right-radius: 10px;
 {
    position: relative;
    z-index: 2;
+   
 }
 .testimonials .card .content p
 {
    font-size: 18px;
    line-height: 24px;
    color:#fff;
+   min-height: 140px;
 }
 .testimonials .card .content .image
 {
@@ -141,10 +143,19 @@ border-bottom-right-radius: 10px;
    border: 4px solid #fff;
   
 }
+
+.testimonials .card .content .image img
+{
+   width: 100px;
+   
+  
+}
+
 .testimonials .card .content .details h2
 { 
    font-size: 18px;
    color: #fff;
+   line-height: 30px;
 }
 .testimonials .card .content .details h2 span
 {
