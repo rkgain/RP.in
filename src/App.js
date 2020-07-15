@@ -15,6 +15,8 @@ import Abhi from '../src/asset/images/abhi.jpg';
 import Rld from '../src/asset/images/rdl.jpg';
 import ReactGA from 'react-ga';
 import { Link, animateScroll as scroll } from "react-scroll";
+import { initGA, logPageView } from "./analytics"
+
 // import { Line, Circle } from 'rc-progress';
 class App extends React.Component {
    state = {showShade: false,
@@ -48,6 +50,12 @@ class App extends React.Component {
 
 
         componentDidMount() {
+          if (!window.GA_INITIALIZED) {
+               initGA()
+               window.GA_INITIALIZED = true
+             }
+             logPageView();
+
           window.addEventListener('scroll', this.handleScroll, true);
         }
       
@@ -65,9 +73,6 @@ class App extends React.Component {
           //  let showMenu = (this.state.showShade || window.scrollY===0) ? this.state.showMenu ? "pop navbar-collapse": "collapse navbar-collapse" 
            let showMenu =  this.state.showMenu ? "pop navbar-collapse": "collapse navbar-collapse" //:"collapse navbar-collapse"
 
-
-           ReactGA.initialize('UA-172742796-1');
-           ReactGA.pageview('/');
 
 
   return (
