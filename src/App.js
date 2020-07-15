@@ -458,7 +458,8 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 		<div class="layer"></div>
 		<div class="content">
 			<p>
-				One of the closest friend, always ready to help. I find bit jealous when I see his dedication towards work.<br/> we call him Technical Guru.
+				One of the closest friend, always ready to help. 
+                    I find bit jealous when I see his dedication towards work.<br/> We call him Technical Guru.
                     </p>
 				<div class="image">
                     <img src={Abhi}/>
@@ -476,7 +477,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 <div class="layer"></div>
 <div class="content">
      <p>
-        You are my expert,most skilled, knowledgeable and committed mentor</p>
+        You are my expert, most skilled, knowledgeable and committed mentor. Hats off to his personality, charisma and accomplishments.</p>
           <div class="image">
           <img src={Sam}/>
           </div>
@@ -560,7 +561,8 @@ He understands and cares about other people’s problems and he’s good at find
 <div class="layer"></div>
 <div class="content">
      <p>
-     If you ask me I can talk many things about him, but to be precise he is the best mentor I have ever had with fantastic IQ, good sense of humor and sound level of patience. 
+     If you ask me I can talk many things about him, 
+     but to be concise he is the best mentor I have ever had with fantastic IQ, good sense of humor and sound level of patience. 
      </p>
            <div class="image">
                <img src={Rubesh} />
