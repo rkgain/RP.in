@@ -13,7 +13,7 @@ import Sam from '../src/asset/images/sam.jpg';
 import Nandini from '../src/asset/images/nandini.jpg';
 import Abhi from '../src/asset/images/abhi.jpg';
 import Rld from '../src/asset/images/rdl.jpg';
-
+import ReactGA from 'react-ga';
 import { Link, animateScroll as scroll } from "react-scroll";
 // import { Line, Circle } from 'rc-progress';
 class App extends React.Component {
@@ -58,10 +58,18 @@ class App extends React.Component {
    
      render() {
 
+         
+
         let classMenu = this.state.showShade ? "navbar navbar-fixed-top top-nav-collapse custom-navbar " : "navbar navbar-fixed-top custom-navbar"
           //  let showMenu = this.state.showMenu ?  "pop navbar-collapse": "collapse navbar-collapse" 
           //  let showMenu = (this.state.showShade || window.scrollY===0) ? this.state.showMenu ? "pop navbar-collapse": "collapse navbar-collapse" 
            let showMenu =  this.state.showMenu ? "pop navbar-collapse": "collapse navbar-collapse" //:"collapse navbar-collapse"
+
+
+           ReactGA.initialize('UA-172742796-1');
+           ReactGA.pageview('/');
+
+
   return (
     <div className="App"   >
      {/* top-nav-collapse */}
@@ -286,7 +294,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                                    <i class="fa fa-institution"></i>
                               </div>
                               <div class="media-body">
-                                   <h3 class="media-heading">Part Time Instructor (Computer) <small>2009 - 2012</small></h3>
+                                   <h3 class="media-heading">Part Time Instructor (Computer) <small>2010 - 2013</small></h3>
                                    <p class="color-white">Dr. BR Ambedkar Institute of Technology</p>
                               </div>
                          </div>
@@ -296,7 +304,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
                                    <i class="fa fa-html5"></i>
                               </div>
                               <div class="media-body">
-                                   <h3 class="media-heading">Software Developer <small>2009</small></h3>
+                                   <h3 class="media-heading">Software Developer <small>2009-2010</small></h3>
                                    <p class="color-white">Directorate Of Shipping Services</p>
                               </div>
                          </div>
