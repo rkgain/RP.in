@@ -458,8 +458,8 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 		<div class="layer"></div>
 		<div class="content">
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua.</p>
+				One of the closest friend, always ready to help. I find bit jealous when I see his dedication towards work.<br/> we call him Technical Guru.
+                    </p>
 				<div class="image">
                     <img src={Abhi}/>
 				</div>
@@ -515,8 +515,11 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 <div class="layer"></div>
 <div class="content">
      <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</p>
+         He is one of the humblest person I have known. It is a pleasure working with Rakesh. 
+         His positive attitude, dedication and passion not only improves his work, 
+         but also motivates anyone fortunate enough to work alongside him.
+         
+         </p>
           <div class="image">
           <img src={Rld}/>
           </div>
