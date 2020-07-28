@@ -90,7 +90,7 @@ class App extends React.Component {
                     <span class="icon icon-bar"></span>
                </button>
 
-               <Link activeClass="active" to="home" spy={true}   smooth={true}  offset={-50}   duration={1500} onClick={()=>this.menuHandle('')}
+               <Link activeClass="active" to="home" spy={true}   smooth='easeInOutQuint' offset={-50}   duration={1500} onClick={()=>this.menuHandle('')}
 > <img src={Logo} width="120px" alt="Logo of Rakesh Prabhu" style={{margin:"7px 26px",borderBottom:"solid 1px #fff",paddingBottom:"3px"}}/>   </Link>
 
                {/* <a href="" class="navbar-brand"><img src={Logo} width="120px" alt="Logo of Rakesh Prabhu" style={{marginTop:"-6px",borderBottom:"solid 1px #fff",paddingBottom:"3px"}}/></a> */}
@@ -113,7 +113,7 @@ class App extends React.Component {
     activeClass="active"
     to="about"
     spy={true}
-    smooth={true}
+    smooth='easeInOutQuint'
     offset={-50}
     duration={700} onClick={()=>this.menuHandle('')}
 >About Me</Link>
@@ -122,7 +122,7 @@ class App extends React.Component {
                     <Link activeClass="active"
     to="experience"
     spy={true}
-    smooth={true}
+    smooth='easeInOutQuint'
     offset={-50}
     duration={1500} onClick={()=>this.menuHandle('')}
 >Experiences</Link>
@@ -131,7 +131,7 @@ class App extends React.Component {
                     <Link activeClass="active"
     to="service"
     spy={true}
-    smooth={true}
+    smooth='easeInOutQuint'
     offset={-50}
     duration={1500} onClick={()=>this.menuHandle('')}
 >My Work</Link>
@@ -141,7 +141,7 @@ class App extends React.Component {
                     <Link activeClass="active"
     to="test"
     spy={true}
-    smooth={true}
+    smooth='easeInOutQuint'
     offset={-50}
     duration={1500} onClick={()=>this.menuHandle('')}
 >Testimonials</Link>
@@ -151,7 +151,7 @@ class App extends React.Component {
                     <Link activeClass="active"
     to="contact"
     spy={true}
-    smooth={true}
+    smooth='easeInOutQuint'
     offset={-60}
     duration={1500} onClick={()=>this.menuHandle('')}
 >Say hello</Link>
