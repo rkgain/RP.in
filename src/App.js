@@ -443,7 +443,7 @@ When I am not at my computer, my love for animals, exploring untouched serenic b
 <div class="bg-blue col-md-3 col-sm-6">
      <div class="color-white wow fadeInUp service-thumb animated" data-wow-delay="1.2s" >
           <i class="fa fa-laptop"></i>
-               <h3>UrjaPay (Upcoming..) for Department of Electricity</h3>
+               <h3>UrjaPay for Department of Electricity</h3>
              
      </div>
 </div>
